@@ -81,24 +81,28 @@ def go_dependencies():
     )
     go_repository(
         name = "com_github_aws_aws_sdk_go_v2_service_s3",
+        build_directives = ["gazelle:resolve go github.com/aws/aws-sdk-go-v2/internal/endpoints/awsrulesfn @com_github_aws_aws_sdk_go_v2//internal/endpoints/awsrulesfn"],  # keep
         importpath = "github.com/aws/aws-sdk-go-v2/service/s3",
         sum = "h1:v346f1h8sUBKXnEbrv43L37MTBlFHyKXQPIZHNAaghA=",
         version = "v1.38.2",
     )
     go_repository(
         name = "com_github_aws_aws_sdk_go_v2_service_sso",
+        build_directives = ["gazelle:resolve go github.com/aws/aws-sdk-go-v2/internal/endpoints/awsrulesfn @com_github_aws_aws_sdk_go_v2//internal/endpoints/awsrulesfn"],  # keep
         importpath = "github.com/aws/aws-sdk-go-v2/service/sso",
         sum = "h1:A2RlEMo4SJSwbNoUUgkxTAEMduAy/8wG3eB2b2lP4gY=",
         version = "v1.13.2",
     )
     go_repository(
         name = "com_github_aws_aws_sdk_go_v2_service_ssooidc",
+        build_directives = ["gazelle:resolve go github.com/aws/aws-sdk-go-v2/internal/endpoints/awsrulesfn @com_github_aws_aws_sdk_go_v2//internal/endpoints/awsrulesfn"],  # keep
         importpath = "github.com/aws/aws-sdk-go-v2/service/ssooidc",
         sum = "h1:OJELEgyaT2kmaBGZ+myyZbTTLobfe3ox3FSh5eYK9Qs=",
         version = "v1.15.2",
     )
     go_repository(
         name = "com_github_aws_aws_sdk_go_v2_service_sts",
+        build_directives = ["gazelle:resolve go github.com/aws/aws-sdk-go-v2/internal/endpoints/awsrulesfn @com_github_aws_aws_sdk_go_v2//internal/endpoints/awsrulesfn"],  # keep
         importpath = "github.com/aws/aws-sdk-go-v2/service/sts",
         sum = "h1:ympg1+Lnq33XLhcK/xTG4yZHPs1Oyxu+6DEWbl7qOzA=",
         version = "v1.21.2",
